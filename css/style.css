@@ -263,24 +263,51 @@ section h2::after {
 #contact .container {
   display: grid;
   gap: 1.5rem;
-  background-color: aqua;
 }
 
 #contact .container .business-cards {
   display: grid;
   align-self: start;
   gap: 1.5rem;
-  background-color: lime;
+  font-weight: 800;
+  font-size: 1rem;
 }
 
 #contact .container .business-cards h3 {
   margin: 0;
+  font-size: x-large;
 }
 
 #contact .container .business-cards .business-card {
   width: 350px;
   height: 200px;
-  background-color: yellow;
+  background-image: linear-gradient(190deg, var(--darker-color) -10%, #fff 60%, #fff 85%, var(--lighter-color) 100%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  border-radius: 0.375rem;
+  padding: 15px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+
+#contact .container .business-cards .business-card>* {
+  margin: 0;
+}
+
+#contact .container .business-cards .business-card h4 {
+  color: #009fe3;
+  text-align: center;
+  font-size: x-large;
+  transition: all 0.5s;
+}
+
+#contact .container .business-cards .business-card ul {
+  list-style: none;
+  padding: 0;
+  transition: all 0.5s;
 }
 
 #contact .container .business-cards .business-card:nth-child(even) {
@@ -293,10 +320,8 @@ section h2::after {
 
 #contact .container form {
   display: grid;
-  /*align-self: start;*/
   grid-template-rows: auto auto 1fr auto;
   gap: 1.5rem;
-  background-color: purple;
 }
 
 #contact .container form input,
@@ -333,16 +358,12 @@ section h2::after {
   transform: translate(-50%, -50%);
 }
 
-/*
-.contact-left p i {
-  width: 1.5rem;
-  color: var(--primary-color);
-  margin-right: 1rem;
-  font-size: 1.5625rem;
-}
+
 #msg {
   color: #61b752;
-}*/
+}
+
+/*Még kell vele foglalkozni*/
 
 .copyright {
   font-size: 14px;
@@ -356,6 +377,12 @@ section h2::after {
   #contact .container .business-cards .business-card {
     width: 700px;
     height: 400px;
+    font-size: xx-large;
+    padding: 30px;
+  }
+
+  #contact .container .business-cards .business-card h4 {
+    font-size: xxx-large;
   }
 }
 
@@ -386,6 +413,10 @@ section h2::after {
   section h2 {
     font-size: 3.75rem;
   }
+
+  #contact .container .business-cards .business-card {
+    background-image: linear-gradient(170deg, var(--darker-color)-10%, #fff 60%, #fff 85%, var(--lighter-color) 100%);
+  }
 }
 
 @media (min-width: 1280px) {
@@ -396,5 +427,34 @@ section h2::after {
   #contact .container .business-cards .business-card {
     width: 350px;
     height: 200px;
+    padding: 15px;
+  }
+
+  #contact .container .business-cards .business-card h4 {
+    font-size: x-large;
+  }
+
+  #contact .container .business-cards .business-card ul {
+    font-size: medium;
+  }
+}
+
+@media (min-width: 1920px) {
+  #contact .container {
+    grid-template-columns: 700px 1fr;
+  }
+
+  #contact .container .business-cards .business-card {
+    width: 700px;
+    height: 400px;
+    padding: 30px;
+  }
+
+  #contact .container .business-cards .business-card h4 {
+    font-size: xxx-large;
+  }
+
+  #contact .container .business-cards .business-card ul {
+    font-size: xx-large;
   }
 }
