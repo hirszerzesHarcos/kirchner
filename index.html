@@ -2,7 +2,7 @@
 <html lang="hu">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Köpcös Invest Kft.</title>
   <link rel="stylesheet" href="css/style.css">
@@ -12,201 +12,103 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/61794c7621.js" crossorigin="anonymous"></script>
+  <script src="/scripts/base.js"></script>
 </head>
 
 <body>
-  <div id="header">
-    <div class="container">
-      <nav>
-        <img src="images/logo.png" alt="logo" class="logo">
-        <ul id="sidemenu">
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <i class="fas fa-times" onclick="closemenu()"></i>
-        </ul>
-        <i class="fas fa-bars" onclick="openmenu()"></i>
-      </nav>
-      <div class="header-text">
-        <p>UI/UX designer</p>
-        <h1>Hi, I'm <span>Kevin</span><br>From Australia</h1>
-      </div>
-    </div>
-  </div>
-  <div id="about">
-    <div class="container">
-      <div class="row">
-        <div class="about-col-1">
-          <img src="images/user.png" alt="user">
-        </div>
-        <div class="about-col-2">
-          <h2 class="sub-title">About Me</h2>
-          <p>Ez azt kedte, hogy a pökönyveteket, a bim-bam kerteket, a fölésöket harkolták. Egy egész gartos sodást
-            kellett rolódnia, hogy
-            tetítsék, kinek van kertje, hogy el ne kodja tükrögnie a félést. Ez olyan portó pikóbát fanyozott ki
-            rácskában, hogy a diségekben kolótokat széperfedtek a közékevényről és erről a kismelőről. A köténtése még
-            tán ma is padt: „Ha szaktatotta a ványság, szaktatja a kalás, és ha a kalás fozta, miért ne tislinázná el a
-            hasábat?” - szóval hihetetlenül cúgós volt.</p>
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-            <p class="tab-links" onclick="opentab('education')">Education</p>
-          </div>
-          <div class="tab-contents active-tab" id="skills">
-            <ul>
-              <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-              <li><span>Web Development</span><br>Web app Development</li>
-              <li><span>App Development</span><br>Building Android/iOS apps</li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="experience">
-            <ul>
-              <li><span>UI/UX2</span><br>Designing Web/App interfaces</li>
-              <li><span>Web Development</span><br>Web app Development</li>
-              <li><span>App Development</span><br>Building Android/iOS apps</li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="education">
-            <ul>
-              <li><span>UI/UX3</span><br>Designing Web/App interfaces</li>
-              <li><span>Web Development</span><br>Web app Development</li>
-              <li><span>App Development</span><br>Building Android/iOS apps</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="services">
-    <div class="container">
-      <h2 class="sub-title">My Services</h2>
-      <div class="services-list">
-        <div>
-          <i class="fas fa-code"></i>
-          <h3>Web Design</h3>
-          <p>Lórum ipse hihlenes, a volás végtelen, az érder elmi, a kítő csúszós, a csike szelejős. Ez azt kedte, hogy
-            a pökönyveteket, a bim-bam kerteket, a fölésöket harkolták.</p>
-          <a href="#">Learn more</a>
-        </div>
-        <div>
-          <i class="fas fa-crop-alt"></i>
-          <h3>UI/UX Design</h3>
-          <p>Lórum ipse hihlenes, a volás végtelen, az érder elmi, a kítő csúszós, a csike szelejős. Ez azt kedte, hogy
-            a pökönyveteket, a bim-bam kerteket, a fölésöket harkolták.</p>
-          <a href="#">Learn more</a>
-        </div>
-        <div>
-          <i class="fab fa-app-store"></i>
-          <h3>App Design</h3>
-          <p>Lórum ipse hihlenes, a volás végtelen, az érder elmi, a kítő csúszós, a csike szelejős. Ez azt kedte, hogy
-            a pökönyveteket, a bim-bam kerteket, a fölésöket harkolták.</p>
-          <a href="#">Learn more</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <div id="portfolio">
-    <div class="container">
-      <h2 class="sub-title">My Work</h2>
-      <div class="work-list">
-        <div class="work">
-          <img src="images/work-1.png" alt="work">
-          <div class="layer">
-            <h3>Social Media App</h3>
-            <p>Ez azt kedte, hogy a pökönyveteket, a bim-bam kerteket, a fölésöket harkolták.</p>
-            <a href="#"><i class="fas fa-external-link-alt"></i></a>
-          </div>
-        </div>
-        <div class="work">
-          <img src="images/work-2.png" alt="work">
-          <div class="layer">
-            <h3>Music App</h3>
-            <p>Ez azt kedte, hogy a pökönyveteket, a bim-bam kerteket, a fölésöket harkolták.</p>
-            <a href="#"><i class="fas fa-external-link-alt"></i></a>
-          </div>
-        </div>
-        <div class="work">
-          <img src="images/work-3.png" alt="work">
-          <div class="layer">
-            <h3>Online Shopping App</h3>
-            <p>Ez azt kedte, hogy a pökönyveteket, a bim-bam kerteket, a fölésöket harkolták.</p>
-            <a href="#"><i class="fas fa-external-link-alt"></i></a>
-          </div>
-        </div>
-      </div>
-      <a href="#" class="btn">See more</a>
-    </div>
-  </div>
-  <div id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="contact-left">
-          <h2 class="sub-title">Contact Me</h2>
-          <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
-          <p><i class="fas fa-phone-square-alt"></i> 0123456789</p>
-          <div class="social-icons">
-            <a href=""><i class="fab fa-facebook"></i></a>
-            <a href=""><i class="fab fa-twitter-square"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
-            <a href=""><i class="fab fa-linkedin"></i></a>
-          </div>
-          <a href="pdf/my-cv.pdf" download class="btn btn2">Download CV</a>
-        </div>
-        <div class="contact-right">
-          <form>
-            <input type="text" name="Name" placeholder="Your Name" required>
-            <input type="email" name="Email" placeholder="Your Email" required>
-            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="copyright">
-      <p>Copyright Kevin. Made with <i class="fas fa-heart"></i> by Easy Tutorials</p>
-    </div>
-  </div>
-  <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    var sidemenu = document.getElementById("sidemenu");
-
-    function opentab(tabname) {
-      for (tablink of tablinks) {
-        tablink.classList.remove("active-link")
-      }
-      for (tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab")
-      }
-      event.currentTarget.classList.add("active-link");
-      document.getElementById(tabname).classList.add("active-tab");
-    }
-
-    function openmenu() {
-      sidemenu.style.right = "0";
-    }
-    function closemenu() {
-      sidemenu.style.right = "-200px";
-    }
-
-  </script>
-  <!--header>
-    <h1>Köpcös Invest Kft.</h1>
-    <nav>
+  <header id="home">
+    <nav id="navigation">
+      <a href="#home"><span>K</span>öpcös Invest</a>
       <ul>
-        <li>Bemutatkozás</li>
-        <li>Projektjeink</li>
-        <li>Galéria</li>
-        <li>Kapcsolat</li>
+        <li><a href="#new-construction">Új építés</a></li>
+        <li><a href="#renovation">Felújítás</a></li>
+        <li><a href="#project">Projekt</a></li>
+        <li><a href="#contact">Kapcsolat</a></li>
+        <li><a href="#reference-works">Referenciamunkák</a></li>
       </ul>
+      <div class="hamburger-menu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
     </nav>
+    <div class="main-title">
+      <div class="title">
+        <h1>Ingatlan építés, felújítás, értékesítés</h1>
+        <blockquote>Szóljatok a Köpcösnek!</blockquote>
+      </div>
+      <img src="/images/logo.svg" alt="logo">
+    </div>
   </header>
   <main>
-    <p>Valami tartalom.</p>
-  </main-->
+    <section>
+      <h2 data-text="Munkáink">Munkáink</h2>
+      <div class="works">
+        <div class="card-holder" id="new-construction">
+          <div class="background"></div>
+          <div class="content">
+            <h3>Új lakóházépítés!</h3>
+            <p>Generálkivitelezésben vállaljuk új lakóházak és társasházak építését, teljes ügyintézéssel, tervekkel,
+              engedélyekkel, hitelügyintézéssel és állami támogatások lehívásával.</p>
+            <i class="fas fa-home"></i>
+          </div>
+        </div>
+        <div class="card-holder" id="renovation">
+          <div class="background"></div>
+          <div class="content">
+            <h3>Régiből újat!<br>Korszerűsítés, Energiamegtakarítás</h3>
+            <p> Újjávarázsoljuk régi otthonát.
+              Teljes, illetve részleges felújítási munkálatokat vállalunk teljes ügyintézéssel, aktuális állami
+              támogatások lehívásával.</p>
+            <i class="fas fa-house-damage"></i>
+          </div>
+        </div>
+        <div class="card-holder" id="project">
+          <div class="background"></div>
+          <div class="content">
+            <h3>Projektek</h3>
+            <p>Műemlékvédelem alatt álló épületek állagmegóvási munkálatait vállaljuk.
+              (Felületképzés, burkolás, nyílászáró felújítás, villany-fűtés szerelés)</p>
+            <i class="fas fa-landmark"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2 data-text="Kapcsolat">Kapcsolat</h2>
+      <div class="container">
+        <div class="business-cards">
+          <h3>Írjon nekünk</h3>
+          <div class="business-card">
+            <h4>Projektvezető</h4>
+            <ul>
+              <li>Galambos Szílvia</li>
+              <li>galambos.szilvia@kopcosinvest.hu</li>
+              <li>+36301797314</li>
+            </ul>
+          </div>
+          <div class="business-card">
+            <h4>Ügyvezető</h4>
+            <ul>
+              <li>Kirchner Zsolt</li>
+              <li>kirchner.zsolt@kopcosinvest.hu</li>
+              <li>+36706395660</li>
+            </ul>
+          </div>
+        </div>
+        <form name="submit-to-google-sheet">
+          <input type="text" name="name" placeholder="Név" required>
+          <input type="email" name="email" placeholder="E-mail" required>
+          <textarea name="message" rows="6" placeholder="Üzenet" required></textarea>
+          <button type="submit">Elküld</button>
+          <span id="msg">Hello</span>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="copyright">
+    <p>Készült: 2022</p>
+  </footer>
 </body>
 
 </html>
