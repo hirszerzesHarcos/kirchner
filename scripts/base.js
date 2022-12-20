@@ -13,16 +13,22 @@ function start() {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
       .then(response => {
+        msg.style.color = "#42ff74";
         msg.innerHTML = "Üzenet sikeresen elküldve";
+        msg.style.display = "initial";
         setTimeout(function () {
-          msg.innerHTML = "";
+          /*msg.innerHTML = "";*/
+          msg.style.display = "none";
         }, 5000);
         form.reset();
       })
       .catch(error => {
-        msg.innerHTML = "Üzenet elküldése sikertelen. Kérjük próbálja meg később!<br>Error log:<br>" + error.message;
+        msg.style.color = "#ff4242";
+        msg.innerHTML = "Üzenet küldése sikertelen. Kérjük próbálja meg később!<br>Error log:<br>" + error.message;
+        msg.style.display = "initial";
         setTimeout(function () {
-          msg.innerHTML = "";
+          /*msg.innerHTML = "";*/
+          msg.style.display = "none";
         }, 9000);
       })
   })
